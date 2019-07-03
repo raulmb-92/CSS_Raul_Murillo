@@ -1,0 +1,403 @@
+body{
+	font-family: Dancing Script;
+	background-color: #02010a;
+}
+
+#cabecera{
+	background-color: #5b7989;
+	border-radius: 10px 10px 0 0;
+	width: 100%;
+	justify-content: space-between;
+	display: flex;
+	flex-direction: row;
+	animation: miAnimacion 1s;
+}
+
+@-webkit-keyframes miAnimacion{
+	0%{
+		margin-top: 150%;
+	}
+	60%{
+		margin-top: -5%;
+	}
+	100%{
+		margin-top: 0%;
+	}
+}
+
+#titulo{	
+	text-shadow: 2px 2px 2px #02010a;
+	color: white;
+	float: left;
+	order: 1;
+}
+
+#enlaces{
+	color: white;
+	float: right;
+	order: 2;
+}
+
+a[href]{
+	color: white;
+}
+
+.link{
+	text-decoration: none;
+}
+
+#imagen-central{
+	background-color: #82c3a6;
+}
+
+#atardecer{
+	width: 75%;
+	padding: 2% 5% 2% 12%;
+}
+
+#imagenes-sec{
+	background-color: #d5c75f;
+	border: 1px solid black;
+	display: flex;
+	flex-direction: row;
+}
+
+#encino{
+	width: 40%;
+	padding: 2% 5% 2% 5%;
+	order: 1;
+	border: 2px;
+}
+
+#nino{
+	width: 40%;
+	padding: 2% 5% 2% 5%;
+	order: 2;
+}
+
+#encino img:hover{
+	transform: rotate(10deg);
+	box-shadow: #82c3a6;
+	border-radius: 2px solid red;
+}
+
+#nino img:hover{
+	transform: translate(20px, -5px);
+}
+
+footer{
+	clear: both;
+	background-color: #c6d5c5;
+	border-radius: 0 0 10px 10px;
+	display: flex;
+	flex-direction: row;
+	padding-left: 1%;
+}
+
+#contacto{
+	width: 25%;
+	order: 1;
+}
+
+#terminos{
+	width: 25%;
+	order: 2;
+}
+
+#redes{
+	width: 25%;
+	order: 3;
+}
+
+#derechos{
+	width: 25%;
+	order: 4;
+}
+
+footer img{
+	width: 10%;
+	border-radius: 50%;
+}
+
+#paisajes-todo{
+	background-color: #d5c75f;
+}
+
+#seccion1-paisaje{
+	display: flex;
+	flex-direction: row;
+}
+
+#paisaje1{
+	width: 25%;
+	order:1;
+	padding: 2% 5% 2% 5%;
+	-webkit-filter: blur(10px);
+	filter: blur(10px);
+}
+
+#paisaje2{
+	width: 25%;
+	order: 2;
+	padding: 2% 5% 2% 5%;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+#paisaje3{
+	width: 25%;
+	order: 3;
+	padding: 2% 5% 2% 5%;
+	-webkit-filter: sepia(90%);
+	filter: sepia(90%);
+}
+
+#seccion2-paisaje{
+	display: flex;
+	flex-direction: row;
+}
+
+#paisaje4{
+	width: 25%;
+	order:1;
+	padding: 2% 5% 2% 5%;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+#paisaje5{
+	width: 25%;
+	order: 2;
+	padding: 2% 5% 2% 5%;
+}
+
+#paisaje6{
+	width: 25%;
+	order: 3;
+	padding: 2% 5% 2% 5%;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+#retratos-todo{
+	background-color: #d5c75f;
+}
+
+#seccion1-retrato{
+	display: flex;
+	flex-direction: row;
+}
+
+#retrato1{
+	width: 25%;
+	order:1;
+	padding: 2% 5% 2% 5%;
+	-webkit-filter: blur(10px);
+	filter: blur(10px);
+}
+
+#retrato2{
+	width: 25%;
+	order: 2;
+	padding: 2% 5% 2% 5%;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+#retrato3{
+	width: 25%;
+	order: 3;
+	padding: 2% 5% 2% 5%;
+	-webkit-filter: sepia(90%);
+	filter: sepia(90%);
+}
+
+#seccion2-retrato{
+	display: flex;
+	flex-direction: row;
+}
+
+#retrato4{
+	width: 25%;
+	order:1;
+	padding: 2% 5% 2% 5%;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+#retrato5{
+	width: 25%;
+	order: 2;
+	padding: 2% 5% 2% 5%;
+}
+
+#retrato6{
+	width: 25%;
+	order: 3;
+	padding: 2% 5% 2% 5%;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+@media (min-width: 900px){
+	#contenido{
+		width: 900px;
+		margin-left: 15%;
+	}
+}
+
+@media (max-width: 899px){
+	#contenido{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	#cabecera{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	#titulo{
+		width: 100%;
+		order: 1;
+		text-align: center;
+	}
+
+	#enlaces{
+		width: 100%;
+		order: 2;
+		text-align: center;
+	}
+	
+	#imagen-cental{
+		width: 100%;
+	}
+	
+	#imagenes-sec{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+	
+	#encino{
+		width: 90%;
+		order: 1;
+	}
+	
+	#nino{
+		width: 90%;
+		order: 2;
+	}
+
+	#seccion1-paisaje{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	#paisaje1{
+		width: 90%;
+		order: 1;
+	}
+
+	#paisaje2{
+		width: 90%;
+		order: 2;
+	}
+
+	#paisaje3{
+		width: 90%;
+		order: 3;
+	}
+
+	#seccion2-paisaje{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	#paisaje4{
+		width: 90%;
+		order: 1;
+	}
+
+	#paisaje5{
+		width: 90%;
+		order: 2;
+	}
+
+	#paisaje6{
+		width: 90%;
+		order: 3;
+	}
+
+	#seccion1-retrato{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	#retrato1{
+		width: 90%;
+		order: 1;
+	}
+
+	#retrato2{
+		width: 90%;
+		order: 2;
+	}
+
+	#retrato3{
+		width: 90%;
+		order: 3;
+	}
+
+	#seccion2-retrato{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	#retrato4{
+		width: 90%;
+		order: 1;
+	}
+
+	#retrato5{
+		width: 90%;
+		order: 2;
+	}
+
+	#retrato6{
+		width: 90%;
+		order: 3;
+	}
+
+	#pie{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	#contacto{
+		width: 100%;
+		order: 1;
+	}
+
+	#terminos{
+		width: 100%;
+		order: 2;
+	}
+
+	#redes{
+		width: 100%;
+		order: 3;
+	}
+
+	#derechos{
+		width: 100%;
+		order: 4;
+	}
+}
